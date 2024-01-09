@@ -44,7 +44,7 @@ class _NewExpenseState extends State<NewExpense> {
       showDialog(
         context: context,
         builder: (ctx) => AlertDialog(
-          title: Text('Invalid Input'),
+          title: const Text('Invalid Input'),
           content: const Text(
               'Please Make sure a valid title, amount and date are entered'),
           actions: [
@@ -133,7 +133,6 @@ class _NewExpenseState extends State<NewExpense> {
                     )
                     .toList(),
                 onChanged: (value) {
-                  print(value);
                   setState(() {
                     if (value == null) {
                       return;
@@ -144,13 +143,11 @@ class _NewExpenseState extends State<NewExpense> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  print(_titleController.text);
-                  print(_amountController.text);
                   _submitExpenseData();
                 },
                 child: const Text('Save'),
               ),
-              SizedBox(width: 5),
+              const SizedBox(width: 5),
               ElevatedButton(
                 onPressed: () {
                   // _titleController.clear();

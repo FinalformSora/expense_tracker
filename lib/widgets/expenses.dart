@@ -18,7 +18,7 @@ class _ExpensesState extends State<Expenses> {
       title: 'Off Brand Amie',
       amount: 1.99,
       date: DateTime.now(),
-      category: Category.onlyFans,
+      category: Category.subscriptions,
     ),
     Expense(
       title: 'Cinema',

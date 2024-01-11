@@ -104,7 +104,7 @@ class _ExpensesState extends State<Expenses> {
       appBar: AppBar(
         title: const Text('UwU Expenses'),
         actions: [
-          const Text(" Add Expenses"),
+          const Text("Add Expenses"),
           IconButton(
             onPressed: _openAddExpenseOverlay,
             icon: const Icon(Icons.add),
